@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        x:Class="SparklineInGrid.MainWindow"
+        Title="MainWindow" Height="562" Width="665" >
+    <Grid>
+        <dxg:GridControl x:Name="grid" ItemsSource="{Binding SalesData}" >
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Title" Header="Order" ReadOnly="True" Width="200"/>
+                <dxg:GridColumn FieldName="SparklineData" Header="Sales" Width="200">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:SparklineEditSettings PointArgumentMember="ArgumentColumn" PointValueMember="ValueColumn">
+                            <dxe:SparklineEditSettings.PointArgumentRange>
+                                <dxe:Range Auto="False" Limit1="07/17/2013" Limit2="08/15/2013" />
+                            </dxe:SparklineEditSettings.PointArgumentRange>
+                            <dxe:SparklineEditSettings.StyleSettings>
+                                <dxe:AreaSparklineStyleSettings Brush="BlueViolet"
+                                    HighlightMaxPoint="True" HighlightMinPoint="True" 
+                                    MaxPointBrush="Red" MinPointBrush="Blue" />
+                            </dxe:SparklineEditSettings.StyleSettings>
+                        </dxe:SparklineEditSettings>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+            </dxg:GridControl.Columns>
+        </dxg:GridControl>
+    </Grid>
+</Window>
