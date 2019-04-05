@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/SparklineInGrid/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/SparklineInGrid/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/SparklineInGrid/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/SparklineInGrid/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/SparklineInGrid/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/SparklineInGrid/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to show sparklines in a grid
 
