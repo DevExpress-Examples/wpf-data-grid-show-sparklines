@@ -3,18 +3,30 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4986)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WPF Data Grid - Display Sparklines
+
+This example demonstrates how to display sparklines in grid cells to visualize data trends.
+
+![WPF Data Grid - Display Arear Sparklines](https://raw.githubusercontent.com/DevExpress-Examples/wpf-data-grid-show-sparklines/22.2.2%2B/i/wpf-data-grid-visualize-data-trends-devexpress.png)
+
+The [WPF SparklineEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.SparklineEdit) control includes dozens of appearance options and ships with the following chart types: Area, Bar, Line, Win/Loss. In this example, the Grid control displays area charts (sparklines). Replace [AreaSparklineStyleSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.AreaSparklineStyleSettings) with another style object to change the chart type. Options include:
+
+* **Bar** - [SparklineStyleSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.BarSparklineStyleSettings)
+* **Line** - [SparklineStyleSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.LineSparklineStyleSettings)
+* **Win/Loss** - [SparklineStyleSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.WinLossSparklineStyleSettings)
+
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/SparklineInGrid/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/SparklineInGrid/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/SparklineInGrid/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/SparklineInGrid/MainWindow.xaml.vb))
-<!-- default file list end -->
-# How to show sparklines in a grid
 
+## Documentation
 
-<p>This example demonstrates how to show sparklines in a grid column. Note that in this sample an Area sparkline is displayed. To change Area to another sparkline view, replace <strong>AreaSparklineStyleSettings</strong> with either <strong>Bar</strong><strong>SparklineStyleSettings</strong>, <strong>Line</strong><strong>SparklineStyleSettings</strong> or <strong>WinLoss</strong><strong>SparklineStyleSettings</strong>.</p><br />
+* [SparklineEdit](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.SparklineEdit)
+* [SparklineEditSettings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Editors.Settings.SparklineEditSettings)
 
+## Related Examples
 
-<br/>
-
-
+* [WPF SparklineEdit - Create a Standalone Sparkline Control](https://github.com/DevExpress-Examples/wpf-sparkline-create-bind-to-data)
